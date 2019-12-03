@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.d3ifcool.tabunganku">
+
+    <application
+        android:icon="@mipmap/dompetku"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/dompetku"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EditPemasukkanActivity"></activity>
+        <activity android:name=".AddPemasukkanActivity"
+            android:label="Tambah Pemasukkan"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DetailActivityPemasukkan"
+            android:label="Detail Pemasukkan"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DetailActivity"
+            android:label="Detail Pengeluaran"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddPengeluaranActivity"
+            android:label="Tambah Pengeluaran"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditPengeluaranActivity"
+            android:label="Edit Pengeluaran" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Tabungan-Ku">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
